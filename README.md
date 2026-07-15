@@ -12,3 +12,6 @@ The goal of this framework is to provide a structured approach to security incid
 
 ## Compliance
 This plan was developed with a focus on HIPAA requirements, ensuring that all incident handling procedures prioritize data integrity and confidentiality during the remediation process.
+
+## Documentation
+(https://github.com/user-attachments/files/30064828/incident_plan.1.pdf)
