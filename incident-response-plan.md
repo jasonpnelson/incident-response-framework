@@ -1,43 +1,82 @@
-Incident Plan 
-1. Incident Overview & Severity  
-Type: ransomware or unauthorized intrusion on the network by an 
-endpoint device. 
-Severity: CRITICAL. Company keeps sensitive medical insurance records 
-immediate isolation is required to prevent any more widespread data 
-breaches ensures compliance with national data protection legislation such 
-as HIPAA. 
-2. Detection & Analysis  
-Identify: Document any visual evidence of the compromise on the 
-employees screen. 
-Assess: Evaluate the scope of the intrusion to make a determination if any 
-other systems that are connected are showing similar signs of the hack. 
-3. Containment 
-Immediate Isolation: Unplug or disconnect the affected device from the 
-network and internet right away by unplugging the ethernet cable and 
-disable wifi to stop any lateral movement or data exfiltration on the 
-network. 
-4. Eradication 
-Scanning for Vulnerabilities: Running deep scans to identify the specific 
-strain of the malware narrows down the vulnerability that allowed the 
-breach to happen. 
-Threat Removal: Erase the malware and patch any security loopholes to 
-make sure the threat is entirely gone from the system before any recovery 
-starts. 
-5. Recovery 
-System Rebuilding: any affected systems need to be rebuilt from a 
-trusted clean disk image. 
-Data Restoration: Restore any necessary data from secure 
-uncompromised systems. 
-Enhanced Monitoring: Deploy continuous monitoring on the restored 
-device before returning to normal operations. 
-6. Roles & Responsibilities 
-Security Analyst: The first responders to confirm the threat, immediately 
-isolate the device from the network, and write up an incident response 
-plan. 
-IT & Security Staff: Deals with technical analysis, runs scans for 
-vulnerabilities, eradicates the malware, patches systems, and safely 
-restores data to a clean state. 
-Legal & compliance: Reviews the breach with data protection laws such 
-as HIPPA and manages the reporting timelines of the incident. 
-Public Relations: Coordinates timely notifications to the affected 
-customers in regards to the status of their personal data. 
+# Incident Response Plan
+
+A formal incident response plan for a ransomware or unauthorized network intrusion
+in a healthcare environment, structured on the NIST 800-61 lifecycle.
+
+---
+
+## 1. Incident Overview
+
+**Incident type:** Ransomware or unauthorized network intrusion originating from an endpoint device.
+
+**Severity:** CRITICAL
+
+**Justification:** The organization stores sensitive medical insurance records. Immediate
+isolation is required to prevent further data loss and to meet HIPAA requirements for
+safeguarding protected health information.
+
+---
+
+## 2. Detection & Analysis
+
+**Identify**
+- Document all visual evidence of the compromise on the affected employee's screen.
+- Capture timestamps, error messages, and any ransom notes or unexpected system behavior.
+
+**Assess**
+- Evaluate the scope of the intrusion.
+- Determine whether other connected systems show similar indicators of compromise.
+
+---
+
+## 3. Containment
+
+**Immediate isolation**
+- Disconnect the affected device from the network by unplugging the ethernet cable.
+- Disable wireless connectivity on the device.
+- Goal: stop lateral movement and prevent data exfiltration.
+
+---
+
+## 4. Eradication
+
+**Scan for vulnerabilities**
+- Run deep scans to identify the specific malware strain.
+- Trace the strain back to the vulnerability that allowed the breach.
+
+**Remove the threat**
+- Erase the malware from affected systems.
+- Patch the identified vulnerability and close any related security gaps.
+- Confirm the threat is fully removed before recovery begins.
+
+---
+
+## 5. Recovery
+
+**System rebuilding**
+- Rebuild affected systems from a trusted, clean disk image.
+
+**Data restoration**
+- Restore data only from secure, verified-uncompromised backups.
+
+**Enhanced monitoring**
+- Deploy continuous monitoring on restored devices before returning them to normal operations.
+
+---
+
+## 6. Roles & Responsibilities
+
+**Security Analyst**
+- First responder. Confirms the threat and immediately isolates the affected device from the network.
+- Documents the incident and produces the incident write-up.
+
+**IT & Security Staff**
+- Performs technical analysis and runs vulnerability scans.
+- Eradicates the malware, patches affected systems, and restores data to a clean state.
+
+**Legal & Compliance**
+- Reviews the breach against applicable data protection law, including HIPAA.
+- Manages regulatory reporting timelines for the incident.
+
+**Public Relations**
+- Coordinates timely notification to affected customers regarding the status of their personal data.
